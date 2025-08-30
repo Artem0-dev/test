@@ -78,6 +78,7 @@ ul {
 
 .header-cont {
   display: flex;
+  align-items: center;
 }
 
 .header-logo {
@@ -546,3 +547,4 @@ footer {
   background-image: url('../images/soap.png');
   content: '';
 }
+

@@ -353,11 +353,13 @@ ul {
   border-radius: 50%;
   cursor: pointer;
   flex-shrink: 0;
+  transition: transform, 0.3s;
 }
 
 .carousel-button:hover {
   fill: var(--color-primary-white);
   background-color: var(--color-primary-light);
+  transform: scale(1.4);
 }
 
 .revert {
@@ -457,83 +459,10 @@ ul {
 }
 
 /* footer */
-.footer-container {
-  display: flex;
-  align-items: center;
-}
-
-.footer-nav-cont {
-  display: flex;
-  flex-grow: 1;
-}
-
-.footer-logo,
-.footer-nav {
-  flex-grow: 1;
-}
-
-.footer-nav {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-}
-
-.address-socials {
-  fill: var(--color-primary-white);
-}
-
-.address-socials:hover {
-  fill: var(--color-primary-light);
-}
-
-.address-icons {
-  display: flex;
-  flex-grow: 1;
-  gap: 24px;
-}
-
-.address-section {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-}
-
-.footer-link {
-  font-size: 16px;
-  font-weight: 400;
-  text-decoration: none;
-  color: var(--color-primary-white);
-}
-
-.footer-address {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-.footer-link:hover {
-  color: var(--color-primary-light);
-  transform: scale(1.1);
-  text-shadow: 1px 0 10px var(--color-primary-light);
-}
-.copy-right-cont {
-  flex-grow: 1;
-}
-.copy-right {
-  font-size: 13px;
-  font-weight: 400;
-  color: var(--color-copyright);
-}
-
-footer {
-  background-color: var(--color-primary-dark);
-  display: flex;
-}
-
 .footer {
   width: 100%;
-  display: flex;
   position: relative;
+  background-color: var(--color-primary-dark);
 }
 
 .footer::after {
@@ -548,3 +477,63 @@ footer {
   content: '';
 }
 
+.footer-container {
+  padding: 56px 0;
+  display: flex;
+  align-items: center;
+  gap: 186px;
+}
+
+.footer-logo {
+  flex-grow: 1;
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+.footer-link-li {
+  padding: 16px 0;
+}
+
+.footer-link {
+  color: var(--color-primary-white);
+  font-size: 19px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: transform, 0.3s;
+}
+
+.footer-link:hover {
+  color: var(--color-primary-light);
+  transform: scale(1.4);
+}
+
+.footer-nav {
+  padding: 16px 0;
+  flex-grow: 1;
+}
+
+.address-icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.address-socials {
+  fill: var(--color-primary-white);
+  transition: transform, 0.3s;
+}
+
+.address-socials:hover {
+  fill: var(--color-primary-light);
+  transform: scale(1.5);
+}
+
+.copy-right {
+  color: var(--color-copyright);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}

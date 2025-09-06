@@ -1,0 +1,96 @@
+.footer {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-primary-dark);
+  &::after {
+    position: absolute;
+    width: 246px;
+    height: 152px;
+    right: 0;
+    bottom: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url('../images/soap.png');
+    content: '';
+  }
+  &__footer-container {
+    padding: 56px 0;
+    display: flex;
+    gap: 20px;
+    &__footer-logo {
+      flex-grow: 1;
+    }
+    &__footer-nav {
+      flex-grow: 1;
+      &__nav-footer-link-li {
+        margin-bottom: 16px;
+        &__nav-footer-link {
+          text-decoration: none;
+          color: var(--color-primary-white);
+          font-size: 19px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          transition: transform, 0.3s;
+          &:hover {
+            color: var(--color-primary-light);
+            transform: scale(1.4);
+          }
+        }
+      }
+    }
+    &__address-section {
+      flex-grow: 1;
+      &__address-link-li {
+        margin-bottom: 16px;
+        &__address-link {
+          text-decoration: none;
+          color: var(--color-primary-white);
+          font-size: 19px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          transition: transform, 0.3s;
+          &:hover {
+            color: var(--color-primary-light);
+            transform: scale(1.4);
+          }
+        }
+      }
+      &__address-icons {
+        display: flex;
+        gap: 24px;
+        &__address-socials {
+          fill: var(--color-primary-white);
+          transition: transform, 0.3s;
+          &:hover {
+            fill: var(--color-primary-light);
+            transform: scale(1.5);
+          }
+        }
+      }
+    }
+    &__copy-right-cont {
+      &__politic {
+        text-decoration: none;
+        color: var(--color-primary-white);
+        font-size: 19px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        transition: transform, 0.3s;
+        &:hover {
+          color: var(--color-primary-light);
+          transform: scale(1.4);
+        }
+      }
+      &__copy-right {
+        margin-top: 16px;
+        color: var(--color-copyright);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+      }
+    }
+  }
+}

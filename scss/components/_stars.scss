@@ -1,0 +1,62 @@
+.star-wrapper1 {
+  position: relative;
+  top: 9%;
+  left: 20%;
+  width: 64px;
+  height: 64px;
+  animation: pulse 4s ease-in-out infinite;
+}
+
+.stars-1 {
+  fill: var(--color-primary-dark);
+  animation: rotating 4s linear infinite;
+}
+
+.star-wrapper2 {
+  position: relative;
+  top: 5%;
+  left: 90%;
+  width: 40px;
+  height: 40px;
+  animation: pulse 4s ease-in-out infinite;
+}
+
+.stars-2 {
+  position: absolute;
+  fill: var(--color-primary-light);
+  animation: rotating 4s linear infinite;
+}
+
+.star-wrapper3 {
+  position: relative;
+  top: 40%;
+  left: 80%;
+  width: 16px;
+  height: 16px;
+  animation: pulse 4s ease-in-out infinite;
+}
+
+.stars-3 {
+  position: absolute;
+  fill: var(--color-copyright);
+  animation: rotating 4s linear infinite;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+}

@@ -1,0 +1,89 @@
+.header {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  @media screen and (min-width: $bp-desktop) {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 32px 0;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  &__cont {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    @media screen and (min-width: $bp-desktop) {
+      flex-grow: 1;
+    }
+    &__logo-link {
+      display: block;
+      &__logo-header {
+        width: 57px;
+        height: 30px;
+        @media screen and (min-width: $bp-desktop) {
+          width: 74px;
+          height: 42px;
+        }
+      }
+    }
+  }
+  &__icons-cont {
+    flex-grow: 1;
+  }
+  &__icons {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      gap: 32px;
+    }
+  }
+  &__socials {
+    fill: var(--color-cards);
+    cursor: pointer;
+    transition: transform 0.3s linear;
+  }
+  &__socials:hover {
+    fill: var(--color-primary-light);
+    transform: scale(1.1);
+  }
+  &__nav {
+    flex-grow: 1;
+  }
+  &__links {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 56px;
+    }
+  }
+  &__link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--color-primary-dark);
+    transition: text-shadow 0.2s linear;
+    &:hover {
+      color: var(--color-primary-light);
+      text-shadow: 0px -3px 9px var(--color-primary-light);
+    }
+  }
+  &__burger {
+    width: 20px;
+    height: 14px;
+    background-color: transparent;
+    border: none;
+    fill: var(--color-primary-white);
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+}

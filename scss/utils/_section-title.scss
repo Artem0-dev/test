@@ -1,0 +1,26 @@
+.section-title {
+  font-size: 32px;
+  line-height: 1;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: var(--color-primary-dark);
+  &__span {
+    font-size: 32px;
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: var(--color-primary-light);
+  }
+  @media screen and (min-width: $bp-desktop) {
+    line-height: 1.2;
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    font-family: 'Play', sans-serif;
+    &__span {
+      color: var(--color-primary-light);
+      font-family: 'Play', sans-serif;
+      font-size: 64px;
+    }
+  }
+}

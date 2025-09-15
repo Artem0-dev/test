@@ -1,0 +1,37 @@
+@import './utils/variables';
+@import './base';
+@import './utils/fonts';
+@import './utils/hidden';
+@import './utils/section-title';
+
+/* Components */
+/* Buttons */
+@import './components/buttons';
+/* STARS + ANIMATION */
+@import './components/stars';
+/* Pagination */
+@import './components/pagination';
+/* Carousel buttons*/
+@import './components/carousel-button';
+/* Forms + inputs*/
+@import './components/forms';
+
+/* Layouts (Sections) */
+/* Modal window (call button)*/
+@import './layouts/call-window';
+/*how to find section*/
+@import './layouts/find-section';
+/* footer */
+@import './layouts/footer';
+/* Header styles */
+@import './layouts/header';
+/*section hero*/
+@import './layouts/hero-section';
+/* info section */
+@import './layouts/info-section';
+/* Job section */
+@import './layouts/job-section';
+/* Mobile menu */
+@import './layouts/mobile-menu';
+/*Why section*/
+@import './layouts/why-section';

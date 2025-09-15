@@ -1,0 +1,79 @@
+.mobile-menu {
+  backdrop-filter: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-primary-white);
+  transform: translateX(100%);
+  z-index: 2;
+  display: flex;
+  padding: 16px 20px;
+  transition: translateX, 0.3s;
+  &.is-open {
+    transition: translateX, 0.3s;
+    transform: translateX(0);
+  }
+  &__nav {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      &__link {
+        text-decoration: none;
+        color: var(--color-primary-dark);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        transition: transform 0.3s;
+        &:hover {
+          color: var(--color-primary-light);
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  &__logo {
+    position: relative;
+  }
+  &__logo-icon {
+    display: block;
+    width: 56px;
+    height: 30px;
+  }
+  &__button-close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    background-color: transparent;
+  }
+  &__icons-list {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__socials {
+    fill: var(--color-primary-dark);
+    transition: transform 0.3s linear;
+    &:hover {
+      fill: var(--color-primary-light);
+      transform: scale(1.1);
+    }
+  }
+  &__close {
+    background-color: transparent;
+    border: none;
+    &__xray-close {
+      height: 12px;
+      width: 12px;
+      stroke: var(--color-cards);
+    }
+  }
+}
+
+.menu-button {
+  fill: var(--color-primary-dark);
+}
